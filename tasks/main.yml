@@ -32,10 +32,6 @@
       ansible.builtin.include_tasks: repo-RedHat.yml
       when: ansible_os_family == "RedHat"
 
-    - name: "Configure repository (Suse)"
-      ansible.builtin.include_tasks: repo-Suse.yml
-      when: ansible_os_family == "Suse"
-
     - name: "Install"
       ansible.builtin.include_tasks: install.yml
       when: netdata_agent_state == "present"

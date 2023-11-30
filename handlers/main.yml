@@ -13,12 +13,6 @@
     name: netdata
     state: absent
 
-- name: "Remove netdata zypper"
-  become: true
-  community.general.zypper:
-    name: netdata
-    state: absent
-
 - name: "Update apt cache (Debian Family)"
   become: true
   ansible.builtin.apt:

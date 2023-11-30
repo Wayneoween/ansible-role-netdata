@@ -38,13 +38,6 @@
     state: present
   when: ansible_pkg_mgr == "dnf"
 
-- name: "Ensure netdata is installed (zypper)"
-  community.general.zypper:
-    name:
-      - netdata
-    state: present
-  when: ansible_pkg_mgr == "zypper"
-
 - name: "Ensure netdata is started"
   ansible.builtin.service:
     name: netdata
