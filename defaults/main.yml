@@ -23,7 +23,7 @@ netdata_agent_conf_template: netdata.conf.j2
 # https://learn.netdata.cloud/docs/configuring/securing-netdata-agents/
 netdata_agent_web_enabled: true
 netdata_agent_web_port: 19999
-netdata_agent_web_bind_to:
+netdata_agent_web_bind_to: 127.0.0.1
 netdata_agent_web_allow_from:
 
 ## Netdata agent will send emails to root@localhost by default
