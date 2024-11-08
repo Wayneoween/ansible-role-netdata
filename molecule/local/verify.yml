@@ -24,10 +24,10 @@
             msg: "netdata service is not enabled"
           when: "'netdata' in services and services['netdata.service']['status'] != 'enabled'"
 
-        - name: "Check netdata dashboard port to closed"
+        - name: "Check netdata dashboard port to open"
           ansible.builtin.wait_for:
             host: "{{ inventory_hostname }}"
             port: "19999"
-            state: stopped
+            state: started
             delay: 5
             timeout: 10
