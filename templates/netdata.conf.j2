@@ -21,6 +21,12 @@
     page cache size = 32
     dbengine multihost disk space = 256
 
+{% if netdata_global_conf is defined %}
+{% for key, value in netdata_global_conf.items() %}
+    {{ key }} = {{ value }}
+{% endfor %}
+{% endif %}
+
 [web]
 {% if netdata_agent_web_enabled is defined and netdata_agent_web_enabled %}
     mode = static-threaded
