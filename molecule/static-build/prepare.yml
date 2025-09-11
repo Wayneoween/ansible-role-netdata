@@ -8,7 +8,7 @@
       ansible.builtin.get_url:
         url: https://my-netdata.io/kickstart.sh
         dest: /tmp/netdata-kickstart.sh
-        mode: 0755
+        mode: "0755"
 
     - name: "Update apt cache"
       ansible.builtin.apt:
