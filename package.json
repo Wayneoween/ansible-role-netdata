@@ -1,0 +1,23 @@
+{
+  "name": "ansible-role-netdata",
+  "version": "1.0.0",
+  "description": "An [Ansible](https://www.ansible.com) role that installs and configures <a href=\"https://www.netdata.cloud\">netdata</a> agent for standalone or cloud use.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgibbs64/ansible-role-netdata.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dgibbs64/ansible-role-netdata/issues"
+  },
+  "homepage": "https://github.com/dgibbs64/ansible-role-netdata#readme"
+}
